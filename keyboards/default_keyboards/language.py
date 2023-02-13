@@ -1,0 +1,15 @@
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+
+button_1 = KeyboardButton(text="🇺🇿 O'zbek")
+button_2 = KeyboardButton(text="🇷🇺 Русский")
+button_3 = KeyboardButton(text="🌏 Tilni o'zgartirish")
+button_4 = KeyboardButton(text="🌏 Изменить язык")
+button_5 = KeyboardButton(text="🏠 Bosh menyu")
+button_6 = KeyboardButton(text="🏠 Главное меню")
+button_7 = KeyboardButton(text="⬅ Ortga")
+button_8 = KeyboardButton(text="⬅ Назад")
+markup = ReplyKeyboardMarkup(resize_keyboard=True).row(button_1, button_2)
+markup_uz_lang = ReplyKeyboardMarkup(resize_keyboard=True).row(button_1, button_2).row(button_7)
+markup_ru_lang = ReplyKeyboardMarkup(resize_keyboard=True).row(button_1, button_2).row(button_8)
+markup_change_language_uz = ReplyKeyboardMarkup(resize_keyboard=True).row(button_3).row(button_7)
+markup_change_language_ru = ReplyKeyboardMarkup(resize_keyboard=True).row(button_4).row(button_8)
